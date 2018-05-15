@@ -1,0 +1,246 @@
+/* Style the form */
+#regForm {
+  background-color: transparent;
+  margin: 10px auto;
+  width: 100%;
+  min-width: 300px;
+}
+
+/*::selection {background: #147fa7;color: #388e53;text-shadow: none;}
+*/
+
+#topdivCustom {
+    clear:both;position:fixed;top:0;height:30%;width:100%;
+    /*background-color:#00bcd4;*/
+    background: linear-gradient(to right, #1480a9 , #388e53);
+    color:#FFFFFF;
+    font-size:16px;text-align:center;
+}
+
+.dropdown-item.selected.active {
+    background: linear-gradient(to right, #1480a9 , #388e53);
+}
+
+.btn-info {
+    background: linear-gradient(to right, #1480a9 , #388e53);
+}
+
+.btn-custom-new{
+  border-color: #1480a9;
+  background: none;
+}
+
+.custom-gradient {
+  background: linear-gradient(to right, #1480a9 , #388e53);
+}
+
+
+.handle-box-shadow {
+  box-shadow: inset 0 1px 0 rgba(103, 94, 94, 0.32), 0 1px 2px rgba(6, 6, 6, 0.38);
+}
+
+#bottomdivCustom {
+    clear:both;position:fixed;bottom:0;height:70%;width:100%;
+    background-color:#bacbce70;
+    color:#FFFFFF;
+    font-size:16px;text-align:center;
+}
+
+.progress-bar {
+    background: linear-gradient(to right, red, yellow , green);
+}
+
+.progress {
+  background-color: #ffffff;
+}
+
+.bootstrap-select.btn-group .dropdown-menu.inner {
+  display: block;
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+
+.slider.slider-horizontal{
+  width:100% !important; /* sample value - set it as you like*/
+}
+
+#supplierOutsideChild {
+    display: none;
+}
+
+#insuranceChild {
+    display: none;
+}
+
+#warehousingChild {
+    display: none;
+}
+
+.card {
+    margin-left: -15px;
+    margin-right: -15px;
+    /*margin-top: 15px;
+    padding-top: 15px;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    /*background-color: #e9ecef;
+    box-shadow: -4px -2px 7px 0px rgba(0, 0, 0, 0.08);*/
+}
+
+.rankOrderCard {
+    margin-left: -5px;
+    margin-right: -5px;
+    /*margin-top: 15px;
+    padding-top: 15px;*/
+    padding-left: 5px;
+    padding-right: 5px;
+    /*background-color: #e9ecef;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.08);*/
+}
+
+.rankChallengescard {
+    margin-left: -5px;
+    margin-right: -5px;
+    /*margin-top: 15px;
+    padding-top: 15px;*/
+    padding-left: 5px;
+    padding-right: 5px;
+    /*background-color: #e9ecef;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.08);*/
+}
+
+/* Style the input fields */
+input[type=text] {
+ /* padding: 10px;*/
+  width: 80%;
+  font-size: 14px;
+  font-family: Raleway;
+  border: 1px solid #8ebed2;
+}
+
+
+/* Mark input boxes that gets an error on validation: 
+* Make different invalid css for different controls
+*/
+input.invalid {
+  background-color: #ffdddd;
+}
+
+.form-control {
+  border: 1px solid #8ebed2;
+  border-radius: 0.25rem;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+
+/* Modal */
+
+/* The Modal (background) */
+.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content2 {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close2 {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header2 {
+    padding: 2px 16px;
+    background-color: #00bcd4;
+    color: white;
+}
+
+.modal-body2 {padding: 2px 16px;}
+
+.modal-footer2 {
+    padding: 2px 16px;
+    background-color: #00bcd4;
+    color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+
+/* Add some shadows to create a card effect */
+.card {
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+}
