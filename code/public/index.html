@@ -126,13 +126,14 @@
                     <!-- TAB 1 -->
                     <div class="tab">
                       <div>
+                      
                       <div class="form-group">
                         <div class="col-lg-12">
                           <div class="row">
-                            <label for="usrFirstName" style="font-weight: 400; color: #898992; font-size: 14px;">Please state the name of your organization?</label>
+                            <label for="organization" style="font-weight: 400; color: #898992; font-size: 14px;">Please state the name of your organization?</label>
                           </div>
                           <div class="row">
-                            <input type="text" class="form-control" id="userFirstName" oninput="">
+                            <input type="text" class="form-control" onkeyup="saveInputText('organization')" id="organization" oninput="">
                           </div>
                         </div>
                         
@@ -141,20 +142,20 @@
                       <div class="form-group">
                         <div class="col-lg-12">
                           <div class="row">
-                            <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">Which part of the supply chain does your organization belongs to?</label>
+                            <label for="organizationType" name="organizationTypeLabel" style="font-weight: 400; color: #898992; font-size: 14px;">Which part of the supply chain does your organization belongs to?</label>
                           </div>
                           <div class="row">
                             <label class="radio-inline col-lg-3">
-                                  <input type="radio" name="organizationBelonging" style="margin-right: 10px;" value="Distributor"/>Distributor
+                                  <input type="radio" onchange="saveDataFromRadioBtnName('organizationType')" name="organizationType" id="organizationType" style="margin-right: 10px;" value="Distributor"/>Distributor
                             </label>
                             <label class="radio-inline col-lg-3">
-                                  <input type="radio" name="organizationBelonging" style="margin-right: 10px;" value="CNF"/>CNF
+                                  <input type="radio" onchange="saveDataFromRadioBtnName('organizationType')" name="organizationType" id="organizationType" style="margin-right: 10px;" value="CNF"/>CNF
                             </label>
                             <label class="radio-inline col-lg-3">
-                                  <input type="radio" name="organizationBelonging" style="margin-right: 10px;" value="Manufacturer"/>Manufacturer
+                                  <input type="radio" onchange="saveDataFromRadioBtnName('organizationType')" name="organizationType" id="organizationType" style="margin-right: 10px;" value="Manufacturer"/>Manufacturer
                             </label>
                             <label class="radio-inline col-lg-3">
-                                  <input type="radio" name="organizationBelonging" style="margin-right: 10px;" value="Retailer"/>Retailer
+                                  <input type="radio" onchange="saveDataFromRadioBtnName('organizationType')" name="organizationType" id="organizationType" style="margin-right: 10px;" value="Retailer"/>Retailer
                             </label>
 
                           </div>
@@ -164,10 +165,10 @@
                       <div class="form-group">
                         <div class="col-lg-12">
                           <div class="row">
-                            <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">In which city is your company registered?</label>
+                            <label for="regOffice" style="font-weight: 400; color: #898992; font-size: 14px;">In which city is your company registered?</label>
                           </div>
                           <div class="row">
-                            <select class="form-control selectpicker col-lg-6" id="sel1" data-live-search="true" data-style="btn-custom-new">
+                            <select class="form-control selectpicker col-lg-6" onchange="saveDataFromSelectorId('regOffice')" id="regOffice" data-live-search="true" data-style="btn-info">
                               <option hidden selected>select city</option>
                               <option >Delhi</option>
                               <option >Bangalore</option>
@@ -181,10 +182,10 @@
                       <div class="form-group">
                         <div class="col-lg-12">
                           <div class="row">
-                            <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">What is the sector of your business?</label>
+                            <label for="businessSector" style="font-weight: 400; color: #898992; font-size: 14px;">What is the sector of your business?</label>
                           </div>
                           <div class="row">
-                            <select class="form-control selectpicker col-lg-6" id="sel1" data-live-search="true" data-style="btn-custom-new">
+                            <select class="form-control selectpicker col-lg-6" id="businessSector" onchange="saveDataFromSelectorId('businessSector')" data-live-search="true" data-style="btn-info">
                               <option hidden selected>select sector</option>
                               <option>Advertising & media</option> 
                               <option>Agriculture</option>
@@ -213,43 +214,44 @@
                       <div class="form-group">
                         <div class="col-lg-12">
                           <div class="row">
-                            <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">What is your role in the organization?</label>
+                            <label for="role" style="font-weight: 400; color: #898992; font-size: 14px;">What is your role in the organization?</label>
                           </div>
                           <div class="row">
                             <label class="radio-inline col-lg-3">
-                                  <input type="radio" name="organizationRole" style="margin-right: 10px;" value="Manager"/>Manager
+                                  <input type="radio" name="role" id="role" onchange="saveDataFromRadioBtnName('role')" style="margin-right: 10px;" value="Manager"/>Manager
                             </label>
                             <label class="radio-inline col-lg-3">
-                                  <input type="radio" name="organizationRole" style="margin-right: 10px;" value="Tech"/>Tech
+                                  <input type="radio" name="role" id="role" onchange="saveDataFromRadioBtnName('role')" style="margin-right: 10px;" value="Tech"/>Tech
                             </label>
                             <label class="radio-inline col-lg-3">
-                                  <input type="radio" name="organizationRole" style="margin-right: 10px;" value="Sales"/>Sales
+                                  <input type="radio" name="role" id="role" onchange="saveDataFromRadioBtnName('role')" style="margin-right: 10px;" value="Sales"/>Sales
                             </label>
                             <label class="radio-inline col-lg-3">
-                                  <input type="radio" name="organizationRole" style="margin-right: 10px;" value="Operations"/>Operations
+                                  <input type="radio" name="role" id="role" onchange="saveDataFromRadioBtnName('role')" style="margin-right: 10px;" value="Operations"/>Operations
                             </label>
                           </div>
                       </div>
                       </div>
 
                       <div class="form-group">
-                        <div class="col-lg-12">
-                          <div class="row">
-                        <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">How many people work in your Organization?</label>
+                          <div class="col-lg-12">
+                            <div class="row">
+                              <label for="organizationSize" style="font-weight: 400; color: #898992; font-size: 14px;">How many people work in your Organization?</label>
+                            </div>
+                            <div class="row">
+                              <label class="radio-inline col-lg-3">
+                                <input type="radio" name="organizationSize" id="organizationSize" onchange="saveDataFromRadioBtnName('organizationSize')" style="margin-right: 10px;" value="10-100"/>10-100
+                              </label>
+                              <label class="radio-inline col-lg-3">
+                                <input type="radio" name="organizationSize" id="organizationSize" onchange="saveDataFromRadioBtnName('organizationSize')" style="margin-right: 10px;" value="100-1000"/>100-1000
+                              </label>
+                              <label class="radio-inline col-lg-3">
+                                <input type="radio" name="organizationSize" id="organizationSize" onchange="saveDataFromRadioBtnName('organizationSize')" style="margin-right: 10px;" value="1000-5000"/>1000-5000
+                              </label>
+                            </div>
+                          </div>
                         </div>
-                        <div class="row">
-                        <label class="radio-inline col-lg-3">
-                                  <input type="radio" name="organizationStrength" style="margin-right: 10px;" value="10-100"/>10-100
-                            </label>
-                            <label class="radio-inline col-lg-3">
-                                  <input type="radio" name="organizationStrength" style="margin-right: 10px;" value="100-1000"/>100-1000
-                            </label>
-                            <label class="radio-inline col-lg-3">
-                                  <input type="radio" name="organizationStrength" style="margin-right: 10px;" value="1000-5000"/>1000-5000
-                            </label>
-                      </div>
-                      </div>
-                      </div>
+                      
                       </div>
 
 
@@ -257,19 +259,17 @@
                       <div class="form-group">
                         <div class="col-lg-12">
                           <div class="row">
-
-                            <label style="font-weight: 400; color: #898992; font-size: 14px;">What is the type of ownership of the business?</label>
+                            <label for="businessOwnershipType" style="font-weight: 400; color: #898992; font-size: 14px;">What is the type of ownership of the business?</label>
                           </div>
                           <div class="row">
                             <label class="radio-inline col-lg-3">
-                                  <input type="radio" name="businessOwnership" style="margin-right: 10px;" value="Partnership"/>Partnership
+                              <input type="radio" name="businessOwnershipType" id="businessOwnershipType" onchange="saveDataFromRadioBtnName('businessOwnershipType')" style="margin-right: 10px;" value="Partnership"/>Partnership
                             </label>
                             <label class="radio-inline col-lg-4">
-                                  <input type="radio" name="businessOwnership" style="margin-right: 10px;" value="Sole-proprietorship"/>Sole proprietorship
+                              <input type="radio" name="businessOwnershipType" id="businessOwnershipType" onchange="saveDataFromRadioBtnName('businessOwnershipType')" style="margin-right: 10px;" value="Sole-proprietorship"/>Sole proprietorship
                             </label>
                           </div>
                         </div>
-
                       </div>
 
 
@@ -1513,6 +1513,7 @@
 
   <script src="js/promise.js"></script>
   <script src="js/fetch.js"></script>
+  <script src="js/submitData.js"></script>
  <!--  <script src="js/app.js"></script>  -->
   
   </body>
