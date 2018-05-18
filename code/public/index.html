@@ -165,10 +165,10 @@
                       <div class="form-group">
                         <div class="col-lg-12">
                           <div class="row">
-                            <label for="regOffice" style="font-weight: 400; color: #898992; font-size: 14px;">In which city is your company registered?</label>
+                            <label for="registeredOffice" style="font-weight: 400; color: #898992; font-size: 14px;">In which city is your company registered?</label>
                           </div>
                           <div class="row">
-                            <select class="form-control selectpicker col-lg-6" onchange="saveDataFromSelectorId('regOffice')" id="regOffice" data-live-search="true" data-style="btn-info">
+                            <select class="form-control selectpicker col-lg-6" onchange="saveDataFromSelectorId('registeredOffice')" id="registeredOffice" data-live-search="true" data-style="btn-info">
                               <option hidden selected>select city</option>
                               <option >Delhi</option>
                               <option >Bangalore</option>
@@ -214,20 +214,20 @@
                       <div class="form-group">
                         <div class="col-lg-12">
                           <div class="row">
-                            <label for="role" style="font-weight: 400; color: #898992; font-size: 14px;">What is your role in the organization?</label>
+                            <label for="roleInOrganization" style="font-weight: 400; color: #898992; font-size: 14px;">What is your role in the organization?</label>
                           </div>
                           <div class="row">
                             <label class="radio-inline col-lg-3">
-                                  <input type="radio" name="role" id="role" onchange="saveDataFromRadioBtnName('role')" style="margin-right: 10px;" value="Manager"/>Manager
+                                  <input type="radio" name="roleInOrganization" id="roleInOrganization" onchange="saveDataFromRadioBtnName('roleInOrganization')" style="margin-right: 10px;" value="Manager"/>Manager
                             </label>
                             <label class="radio-inline col-lg-3">
-                                  <input type="radio" name="role" id="role" onchange="saveDataFromRadioBtnName('role')" style="margin-right: 10px;" value="Tech"/>Tech
+                                  <input type="radio" name="roleInOrganization" id="roleInOrganization" onchange="saveDataFromRadioBtnName('roleInOrganization')" style="margin-right: 10px;" value="Tech"/>Tech
                             </label>
                             <label class="radio-inline col-lg-3">
-                                  <input type="radio" name="role" id="role" onchange="saveDataFromRadioBtnName('role')" style="margin-right: 10px;" value="Sales"/>Sales
+                                  <input type="radio" name="roleInOrganization" id="roleInOrganization" onchange="saveDataFromRadioBtnName('roleInOrganization')" style="margin-right: 10px;" value="Sales"/>Sales
                             </label>
                             <label class="radio-inline col-lg-3">
-                                  <input type="radio" name="role" id="role" onchange="saveDataFromRadioBtnName('role')" style="margin-right: 10px;" value="Operations"/>Operations
+                                  <input type="radio" name="roleInOrganization" id="roleInOrganization" onchange="saveDataFromRadioBtnName('roleInOrganization')" style="margin-right: 10px;" value="Operations"/>Operations
                             </label>
                           </div>
                       </div>
@@ -688,18 +688,18 @@
                         <div class="col-lg-12">
 
                           <div class="row">
-                          <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">How many bank accounts do you hold?</label>
+                          <label for="noOfBankAccountsHolding" style="font-weight: 400; color: #898992; font-size: 14px;">How many bank accounts do you hold?</label>
                           </div>
 
                           <div class="row">
                           <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="bankAccounts" style="margin-right: 10px;" value="1"/>1 account
+                                    <input type="radio" id="noOfBankAccountsHolding" name="noOfBankAccountsHolding" onchange="saveDataFromRadioBtnName('noOfBankAccountsHolding')" style="margin-right: 10px;" value="1"/>1 account
                               </label>
                               <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="bankAccounts" style="margin-right: 10px;" value="2-5"/>2-5 accounts
+                                    <input type="radio" id="noOfBankAccountsHolding" name="noOfBankAccountsHolding" onchange="saveDataFromRadioBtnName('noOfBankAccountsHolding')" style="margin-right: 10px;" value="2-5"/>2-5 accounts
                               </label>
                               <label class="radio-inline col-lg-4">
-                                    <input type="radio" name="bankAccounts" style="margin-right: 10px;" value="+5"/>More than 5 accounts
+                                    <input type="radio" id="noOfBankAccountsHolding" name="noOfBankAccountsHolding" onchange="saveDataFromRadioBtnName('noOfBankAccountsHolding')" style="margin-right: 10px;" value="+5"/>More than 5 accounts
                               </label>
                           </div>
 
