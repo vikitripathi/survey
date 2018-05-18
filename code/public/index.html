@@ -684,190 +684,201 @@
 
                       <div>
 
-                      <div class="form-group">
-                        <div class="col-lg-12">
+                        <div class="form-group">
+                          <div class="col-lg-12">
 
-                          <div class="row">
-                          <label for="noOfBankAccountsHolding" style="font-weight: 400; color: #898992; font-size: 14px;">How many bank accounts do you hold?</label>
-                          </div>
+                            <div class="row">
+                              <label for="noOfBankAccountsHolding" style="font-weight: 400; color: #898992; font-size: 14px;">How many bank accounts do you hold?</label>
+                            </div>
 
-                          <div class="row">
-                          <label class="radio-inline col-lg-3">
-                                    <input type="radio" id="noOfBankAccountsHolding" name="noOfBankAccountsHolding" onchange="saveDataFromRadioBtnName('noOfBankAccountsHolding')" style="margin-right: 10px;" value="1"/>1 account
+                            <div class="row">
+                              <label class="radio-inline col-lg-3">
+                                <input type="radio" id="noOfBankAccountsHolding" name="noOfBankAccountsHolding" onchange="saveDataFromRadioBtnName('noOfBankAccountsHolding')" style="margin-right: 10px;" value="1"/>1 account
                               </label>
                               <label class="radio-inline col-lg-3">
-                                    <input type="radio" id="noOfBankAccountsHolding" name="noOfBankAccountsHolding" onchange="saveDataFromRadioBtnName('noOfBankAccountsHolding')" style="margin-right: 10px;" value="2-5"/>2-5 accounts
+                                <input type="radio" id="noOfBankAccountsHolding" name="noOfBankAccountsHolding" onchange="saveDataFromRadioBtnName('noOfBankAccountsHolding')" style="margin-right: 10px;" value="2-5"/>2-5 accounts
                               </label>
                               <label class="radio-inline col-lg-4">
-                                    <input type="radio" id="noOfBankAccountsHolding" name="noOfBankAccountsHolding" onchange="saveDataFromRadioBtnName('noOfBankAccountsHolding')" style="margin-right: 10px;" value="+5"/>More than 5 accounts
+                                <input type="radio" id="noOfBankAccountsHolding" name="noOfBankAccountsHolding" onchange="saveDataFromRadioBtnName('noOfBankAccountsHolding')" style="margin-right: 10px;" value="+5"/>More than 5 accounts
                               </label>
-                          </div>
+                            </div>
 
-                        </div>  
-
-                      </div>
-
-
-
-
-                      <div class="form-group">
-
-                        <div class="col-lg-12">
-
-                          <div class="row">
-                          <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">What is your preferred source of business finance?</label>
-                          </div>
-
-                          <div class="row">
-                          <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="financeSource" style="margin-right: 10px;" value="banks"/>Banks
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="financeSource" style="margin-right: 10px;" value="f&f"/>Friends & family
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="financeSource" style="margin-right: 10px;" value="lenders"/>Money lenders
-                              </label>
-                              <label class="radio-inline col-lg-4">
-                                    <input type="radio" name="financeSource" style="margin-right: 10px;" value="nbfcs"/>NBFCs (Non-banking financial Corporations)
-                              </label>
-                          </div>
+                          </div>  
 
                         </div>
 
-                      </div>
+
+                        <div class="form-group">
+                          <div class="col-lg-12">
+                            <div class="row">
+                              <label for="preferredSourceOfFinance" style="font-weight: 400; color: #898992; font-size: 14px;">What is your preferred source of business finance?</label>
+                            </div>
+                            <div class="row">
+                              <label class="radio-inline col-lg-3">
+                                <input type="radio" name="preferredSourceOfFinance" id="preferredSourceOfFinance" onchange="saveDataFromRadioBtnName('preferredSourceOfFinance')" style="margin-right: 10px;" value="banks"/>Banks
+                              </label>
+                              <label class="radio-inline col-lg-3">
+                                <input type="radio" name="preferredSourceOfFinance" id="preferredSourceOfFinance" onchange="saveDataFromRadioBtnName('preferredSourceOfFinance')" style="margin-right: 10px;" value="f&f"/>Friends & family
+                              </label>
+                              <label class="radio-inline col-lg-3">
+                                <input type="radio" name="preferredSourceOfFinance" id="preferredSourceOfFinance" onchange="saveDataFromRadioBtnName('preferredSourceOfFinance')" style="margin-right: 10px;" value="lenders"/>Money lenders
+                              </label>
+                              <label class="radio-inline col-lg-4">
+                                <input type="radio" name="preferredSourceOfFinance" id="preferredSourceOfFinance" onchange="saveDataFromRadioBtnName('preferredSourceOfFinance')" style="margin-right: 10px;" value="nbfcs"/>NBFCs (Non-banking financial Corporations)
+                              </label>
+                            </div>
+                          </div>
+                        </div>
 
 
 
 
-                      <div class="form-group">
+                        <div class="form-group">
 
                          <div class="col-lg-12">
-                            <div class="row">
-                              <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">Which all financial services/products have you availed?</label>
-                            </div>
-                            <div class="row">
-                              <select class="form-control selectpicker col-lg-6" id="sel1" data-live-search="true" data-style="btn-custom-new">
-                                <option hidden selected>select a product/service</option>
-                                <option>Over draft</option>
-                                <option>Working capital loan</option>
-                                <option>Bank guarantees</option>
-                                <option>Loan against property</option>
-                                <option>Gold loan</option>
-                              </select>
-                            </div>
-                        </div>
-
-                      </div>
-
-
-
-
-
-                      <div class="form-group">
-
-                        <div class="col-lg-12">
-
                           <div class="row">
-                          <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">How much of your credit requirements are fulfilled by the financial institutions?</label>
+                            <label for="productsAvailed"  style="font-weight: 400; color: #898992; font-size: 14px;">Which all financial services/products have you availed?</label>
                           </div>
-
                           <div class="row">
-                          <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="creditFulfilled" style="margin-right: 10px;" value="level1"/>0-20%
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="creditFulfilled" style="margin-right: 10px;" value="level2"/>21%-50%
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="creditFulfilled" style="margin-right: 10px;" value="level3"/>51%-75%
-                              </label>
-                              <label class="radio-inline col-lg-4">
-                                    <input type="radio" name="creditFulfilled" style="margin-right: 10px;" value="level4"/>76%-100%
-                              </label>
+                            <select class="form-control selectpicker col-lg-6" id="productsAvailed" onchange="saveDataFromSelectorId('productsAvailed')" data-live-search="true" data-style="btn-custom-new">
+                              <option hidden selected>select a product/service</option>
+                              <option>Over draft</option>
+                              <option>Working capital loan</option>
+                              <option>Bank guarantees</option>
+                              <option>Loan against property</option>
+                              <option>Gold loan</option>
+                            </select>
                           </div>
-
-                        </div>
-
-                      </div>
-
-
-
-
-                      <div class="form-group">
-                        <div class="col-lg-12">
-
-                          <div class="row">
-                          <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">How much time does it take for the loan to be disbursed from the time you apply?</label>
-                          </div>
-
-                          <div class="row">
-                          <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="loanDisbursementTime" style="margin-right: 10px;" value="level1"/>Same day
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="loanDisbursementTime" style="margin-right: 10px;" value="level2"/>One week
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="loanDisbursementTime" style="margin-right: 10px;" value="level3"/>One month
-                              </label>
-                              <label class="radio-inline col-lg-4">
-                                    <input type="radio" name="loanDisbursementTime" style="margin-right: 10px;" value="level4"/>More than a month
-                              </label>
-                          </div>
-
-                        </div>
-
-                      </div>
-
-
-
-
-                      <div class="form-group">
-
-                        <div class="col-lg-12">
-
-                          <div class="row">
-                          <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">What is your average quarterly Working Capital Requirement?</label>
-                          </div>
-
-                          <div class="row">
-                          <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="quarterlyCapitalReq" style="margin-right: 10px;" value="level1"/>Less than Rs.25 L
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="quarterlyCapitalReq" style="margin-right: 10px;" value="level2"/>Rs.25L-Rs.50L
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="quarterlyCapitalReq" style="margin-right: 10px;" value="level3"/>Less than Rs.1 C
-                              </label>
-                              <label class="radio-inline col-lg-4">
-                                    <input type="radio" name="quarterlyCapitalReq" style="margin-right: 10px;" value="level4"/>More than Rs.1 C
-                              </label>
-                          </div>
-
                         </div>
                       </div>
 
 
                       <div class="form-group">
-
                         <div class="col-lg-12">
-
                           <div class="row">
-                          <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">What is your payment cycle with your supplier or distributors?</label>
+                            <label for="creditReqFulfillByFinInst" style="font-weight: 400; color: #898992; font-size: 14px;">How much of your credit requirements are fulfilled by the financial institutions?</label>
                           </div>
 
                           <div class="row">
-                          <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="paymentCycle" style="margin-right: 10px;" value="level1"/>Advanced
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="paymentCycle" style="margin-right: 10px;" value="level2"/>On delivery
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="paymentCycle" style="margin-right: 10px;" value="level3"/>Credit
-                              </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="creditReqFulfillByFinInst" id="creditReqFulfillByFinInst" onchange="saveDataFromRadioBtnName('creditReqFulfillByFinInst')" style="margin-right: 10px;" value="level1"/>0-20%
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="creditReqFulfillByFinInst" id="creditReqFulfillByFinInst" onchange="saveDataFromRadioBtnName('creditReqFulfillByFinInst')" style="margin-right: 10px;" value="level2"/>21%-50%
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="creditReqFulfillByFinInst" id="creditReqFulfillByFinInst" onchange="saveDataFromRadioBtnName('creditReqFulfillByFinInst')" style="margin-right: 10px;" value="level3"/>51%-75%
+                            </label>
+                            <label class="radio-inline col-lg-4">
+                              <input type="radio" name="creditReqFulfillByFinInst" id="creditReqFulfillByFinInst" onchange="saveDataFromRadioBtnName('creditReqFulfillByFinInst')" style="margin-right: 10px;" value="level4"/>76%-100%
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <div class="row">
+                            <label for="timeTakenForLoanToDisburse" style="font-weight: 400; color: #898992; font-size: 14px;">How much time does it take for the loan to be disbursed from the time you apply?</label>
+                          </div>
+                          <div class="row">
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="timeTakenForLoanToDisburse" id="timeTakenForLoanToDisburse" onchange="saveDataFromRadioBtnName('timeTakenForLoanToDisburse')" style="margin-right: 10px;" value="level1"/>Same day
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="timeTakenForLoanToDisburse" id="timeTakenForLoanToDisburse" onchange="saveDataFromRadioBtnName('timeTakenForLoanToDisburse')" style="margin-right: 10px;" value="level2"/>One week
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="timeTakenForLoanToDisburse" id="timeTakenForLoanToDisburse" onchange="saveDataFromRadioBtnName('timeTakenForLoanToDisburse')" style="margin-right: 10px;" value="level3"/>One month
+                            </label>
+                            <label class="radio-inline col-lg-4">
+                              <input type="radio" name="timeTakenForLoanToDisburse" id="timeTakenForLoanToDisburse" onchange="saveDataFromRadioBtnName('timeTakenForLoanToDisburse')" style="margin-right: 10px;" value="level4"/>More than a month
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <div class="row">
+                            <label for="avgQtrCapitalRequirement" style="font-weight: 400; color: #898992; font-size: 14px;">What is your average quarterly Working Capital Requirement?</label>
+                          </div>
+                          <div class="row">
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="avgQtrCapitalRequirement" id="avgQtrCapitalRequirement" onchange="saveDataFromRadioBtnName('avgQtrCapitalRequirement')" style="margin-right: 10px;" value="level1"/>Less than Rs.25 L
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="avgQtrCapitalRequirement" id="avgQtrCapitalRequirement" onchange="saveDataFromRadioBtnName('avgQtrCapitalRequirement')" style="margin-right: 10px;" value="level2"/>Rs.25L-Rs.50L
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="avgQtrCapitalRequirement" id="avgQtrCapitalRequirement" onchange="saveDataFromRadioBtnName('avgQtrCapitalRequirement')" style="margin-right: 10px;" value="level3"/>Less than Rs.1 C
+                            </label>
+                            <label class="radio-inline col-lg-4">
+                              <input type="radio" name="avgQtrCapitalRequirement" id="avgQtrCapitalRequirement" onchange="saveDataFromRadioBtnName('avgQtrCapitalRequirement')" style="margin-right: 10px;" value="level4"/>More than Rs.1 C
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <div class="row">
+                            <label for="paymentCycle" style="font-weight: 400; color: #898992; font-size: 14px;">What is your payment cycle with your supplier or distributors?</label>
+                          </div>
+                          <div class="row">
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="paymentCycle" id="paymentCycle" onchange="saveDataFromRadioBtnName('paymentCycle')" style="margin-right: 10px;" value="level1"/>Advanced
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="paymentCycle" id="paymentCycle" onchange="saveDataFromRadioBtnName('paymentCycle')" style="margin-right: 10px;" value="level2"/>On delivery
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="paymentCycle" id="paymentCycle" onchange="saveDataFromRadioBtnName('paymentCycle')" style="margin-right: 10px;" value="level3"/>Credit
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <div class="row">
+                            <label for="letterOfCreditAvailed" style="font-weight: 400; color: #898992; font-size: 14px;">Have you availed Letter of Credits from any financial institution for your export/import?</label>
+                          </div>
+                          <div class="row">
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="letterOfCreditAvailed" id="letterOfCreditAvailed" onchange="saveDataFromRadioBtnName('letterOfCreditAvailed')" style="margin-right: 10px;" value="level1"/>YES
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="letterOfCreditAvailed" id="letterOfCreditAvailed" onchange="saveDataFromRadioBtnName('letterOfCreditAvailed')" style="margin-right: 10px;" value="level2"/>NO
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="letterOfCreditAvailed" id="letterOfCreditAvailed" onchange="saveDataFromRadioBtnName('letterOfCreditAvailed')" style="margin-right: 10px;" value="level3"/>I don't know
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <div class="row">
+                            <label for="taxComplianceManagement" style="font-weight: 400; color: #898992; font-size: 14px;">How do you manage your taxes & compliance?</label>
+                          </div>
+                          <div class="row">
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="taxComplianceManagement" id="taxComplianceManagement" onchange="saveDataFromRadioBtnName('taxComplianceManagement')" style="margin-right: 10px;" value="level1"/>Using a tool (like Tally or Zoho)
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="taxComplianceManagement" id="taxComplianceManagement" onchange="saveDataFromRadioBtnName('taxComplianceManagement')" style="margin-right: 10px;" value="level2"/>Outsourced
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="taxComplianceManagement" id="taxComplianceManagement" onchange="saveDataFromRadioBtnName('taxComplianceManagement')" style="margin-right: 10px;" value="level3"/>I do it myself
+                            </label>
                           </div>
 
                         </div>
@@ -875,166 +886,88 @@
 
 
                       <div class="form-group">
-
                         <div class="col-lg-12">
-
                           <div class="row">
-                          <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">Have you availed Letter of Credits from any financial institution for your export/import?</label>
+                            <label for="gstFiling" style="font-weight: 400; color: #898992; font-size: 14px;">How do you file your GST?</label>
                           </div>
-
                           <div class="row">
-                          <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="loc" style="margin-right: 10px;" value="level1"/>YES
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="loc" style="margin-right: 10px;" value="level2"/>NO
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="loc" style="margin-right: 10px;" value="level3"/>I don't know
-                              </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="gstFiling" id="gstFiling" onchange="saveDataFromRadioBtnName('gstFiling')" style="margin-right: 10px;" value="level1"/>Using a tool (like Tally or Zoho)
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="gstFiling" id="gstFiling" onchange="saveDataFromRadioBtnName('gstFiling')" style="margin-right: 10px;" value="level2"/>Outsourced
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="gstFiling" id="gstFiling" onchange="saveDataFromRadioBtnName('gstFiling')" style="margin-right: 10px;" value="level3"/>I do it myself
+                            </label>
                           </div>
-
                         </div>
+                      </div>
 
+
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <div class="row">
+                            <label for="businessSurpulusInvest" style="font-weight: 400; color: #898992; font-size: 14px;">Where do you invest your business surplus?</label>
+                          </div>
+                          <div class="row">
+                            <select class="form-control selectpicker col-lg-6" id="businessSurpulusInvest" onchange="saveDataFromSelectorId('businessSurpulusInvest')" data-live-search="true" data-style="btn-custom-new">
+                              <option hidden selected>select an option</option>
+                              <option>Fixed deposit</option>
+                              <option>Stock market</option>
+                              <option>Mutual Funds</option>
+                              <option>Fixed assets</option>
+                              <option>Commodities</option>
+                              <option>Cryptocurrency</option>
+                              <option>Not applicable</option>
+                            </select>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
 
-
-
-                      <div>
+                    <div>
                       <div class="form-group">
                         <div class="col-lg-12">
-
                           <div class="row">
-                          <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">How do you manage your taxes & compliance?</label>
+                            <label for="suppliersOutsideIndia" style="font-weight: 400; color: #898992; font-size: 14px;">Do you have suppliers/vendors outside India?</label>
                           </div>
-
                           <div class="row">
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="taxManagement" style="margin-right: 10px;" value="level1"/>Using a tool (like Tally or Zoho)
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="taxManagement" style="margin-right: 10px;" value="level2"/>Outsourced
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="taxManagement" style="margin-right: 10px;" value="level3"/>I do it myself
-                              </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="suppliersOutsideIndia" id="suppliersOutsideIndia" onchange="saveDataFromRadioBtnName('suppliersOutsideIndia')"  style="margin-right: 10px;" value="yes"/>YES
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="suppliersOutsideIndia" id="suppliersOutsideIndia" onchange="saveDataFromRadioBtnName('suppliersOutsideIndia')"  style="margin-right: 10px;" value="no"/>NO
+                            </label>
                           </div>
-
                         </div>
                       </div>
-
-
-
-
-                      <div class="form-group">
-                        <div class="col-lg-12">
-
-                          <div class="row">
-                          <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">How do you file your GST?</label>
-                          </div>
-
-                          <div class="row">
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="gstManagement" style="margin-right: 10px;" value="level1"/>Using a tool (like Tally or Zoho)
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="gstManagement" style="margin-right: 10px;" value="level2"/>Outsourced
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="gstManagement" style="margin-right: 10px;" value="level3"/>I do it myself
-                              </label>
-                          </div>
-
-                        </div>
-                      </div>
-
-
-
-                      <div class="form-group">
-
-                        <div class="col-lg-12">
-                            <div class="row">
-                              <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">Where do you invest your business surplus?</label>
-                            </div>
-                            <div class="row">
-                              <select class="form-control selectpicker col-lg-6" id="sel1" data-live-search="true" data-style="btn-custom-new">
-                                <option hidden selected>select an option</option>
-                                <option>Fixed deposit</option>
-                                <option>Stock market</option>
-                                <option>Mutual Funds</option>
-                                <option>Fixed assets</option>
-                                <option>Commodities</option>
-                                <option>Cryptocurrency</option>
-                                <option>Not applicable</option>
-                              </select>
-                            </div>
-                        </div>
-
-                      </div>
-
-                    </div>
-
-
-                      <div>
-
-                      <div class="form-group">
-
-                        <div class="col-lg-12">
-
-                          <div class="row">
-                          <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">Do you have suppliers/vendors outside India?</label>
-                          </div>
-
-                          <div class="row">
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="supplierOutside" style="margin-right: 10px;" value="yes"/>YES
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="supplierOutside" style="margin-right: 10px;" value="no"/>NO
-                              </label>
-                          </div>
-
-                        </div>
-
-                      </div>
-
 
 
                       <div class="form-group" id="supplierOutsideChild">
-
                         <div class="col-lg-12">
-
                           <div class="row">
-                          <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">If yes, how do you manage your foreign exchange needs?</label>
+                            <label for="forexExchangeNeeds" style="font-weight: 400; color: #898992; font-size: 14px;">If yes, how do you manage your foreign exchange needs?</label>
                           </div>
-
                           <div class="row">
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="fxManagement" style="margin-right: 10px;" value="level1"/>Banks
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="fxManagement" style="margin-right: 10px;" value="level2"/>Money exchanges
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="fxManagement" style="margin-right: 10px;" value="level3"/>Brokerages
-                              </label>
-                              <label class="radio-inline col-lg-4">
-                                    <input type="radio" name="fxManagement" style="margin-right: 10px;" value="level3"/>Others (please provide)
-                              </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="forexExchangeNeeds" id="forexExchangeNeeds" onchange="saveDataFromRadioBtnName('forexExchangeNeeds')" style="margin-right: 10px;" value="level1"/>Banks
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="forexExchangeNeeds" id="forexExchangeNeeds" onchange="saveDataFromRadioBtnName('forexExchangeNeeds')" style="margin-right: 10px;" value="level2"/>Money exchanges
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="forexExchangeNeeds" id="forexExchangeNeeds" onchange="saveDataFromRadioBtnName('forexExchangeNeeds')" style="margin-right: 10px;" value="level3"/>Brokerages
+                            </label>
+                            <label class="radio-inline col-lg-4">
+                              <input type="radio" name="forexExchangeNeeds" id="forexExchangeNeeds" onchange="saveDataFromRadioBtnName('forexExchangeNeeds')" style="margin-right: 10px;" value="level3"/>Others (please provide)
+                            </label>
                           </div>
-
                         </div>
-
                       </div>
-
-
                     </div>
-
-                    </div>
-
-
+                  </div>
 
 
                     <!-- TAB 4 -->
@@ -1321,7 +1254,7 @@
         });
 
 
-        $("input[name='supplierOutside']").click(function () {
+        $("input[name='suppliersOutsideIndia']").click(function () {
             $('#supplierOutsideChild').css('display', ($(this).val() === 'yes') ? 'block':'none');
         });
 
