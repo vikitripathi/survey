@@ -59,6 +59,8 @@ function showTab(n) {
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
+
+  $('html, body').animate({scrollTop: '0px'}, 200, 'linear');
 }
 
 function nextPrev(n) {
