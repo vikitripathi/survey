@@ -1,4 +1,4 @@
-var surveySMEDict = []; // create an empty array
+var surveySMEDict = {}; // create an empty array
 
 function saveInputText(textFor){
   var inputTextData = document.getElementById(textFor).value;

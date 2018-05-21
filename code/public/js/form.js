@@ -15,8 +15,30 @@ function submitForm(){
       document.getElementById("prevBtn").style.display = "none";
       document.getElementById("nextBtn").style.display = "none";
       document.getElementById("surveyProgressbarContainer").style.display = "none";
-
+      saveFormData();
       document.getElementById("regForm").innerHTML = '<div class="col-lg-12"><div class="row"><label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 20px;text-align: justify;text-align-last: center;">Survey Form Submitted. Thank you!</label></div></div>';
+}
+
+function saveFormData() {
+  //alert('alert before api: ');
+
+  console.log(JSON.stringify(surveySMEDict));
+  $.ajax({
+      type: "POST",
+      contentType: "application/json",
+      url: 'http://127.0.0.1:8081/addSurveyData',
+      data: JSON.stringify(surveySMEDict),
+      dataType: 'json',
+      success: function (resp) {
+          //alert(resp);
+          console.log("form submitted!");
+      },
+      error: function(e) {
+          //alert('Error: '+e);
+          console.log("response: " + e.statusCode);
+          console.log("some error: "+ e.statusText);
+      }  
+  });
 }
 
 function showTab(n) {
