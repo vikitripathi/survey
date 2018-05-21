@@ -168,7 +168,7 @@
                             <label for="registeredOffice" style="font-weight: 400; color: #898992; font-size: 14px;">In which city is your company registered?</label>
                           </div>
                           <div class="row">
-                            <select class="form-control selectpicker col-lg-6" onchange="saveDataFromSelectorId('registeredOffice')" id="registeredOffice" data-live-search="true" data-style="btn-info">
+                            <select class="form-control selectpicker col-lg-6" onchange="saveDataFromSelectorId('registeredOffice')" id="registeredOffice" data-live-search="true" data-style="btn-custom-new">
                               <option hidden selected>select city</option>
                               <option >Delhi</option>
                               <option >Bangalore</option>
@@ -185,7 +185,7 @@
                             <label for="businessSector" style="font-weight: 400; color: #898992; font-size: 14px;">What is the sector of your business?</label>
                           </div>
                           <div class="row">
-                            <select class="form-control selectpicker col-lg-6" id="businessSector" onchange="saveDataFromSelectorId('businessSector')" data-live-search="true" data-style="btn-info">
+                            <select class="form-control selectpicker col-lg-6" id="businessSector" onchange="saveDataFromSelectorId('businessSector')" data-live-search="true" data-style="btn-custom-new">
                               <option hidden selected>select sector</option>
                               <option>Advertising & media</option> 
                               <option>Agriculture</option>
@@ -347,16 +347,16 @@
                           
                           <ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s uk-text-center" id="market-uk-card" uk-sortable="handle: .uk-card;" uk-grid uk-height-match="target: > div > .uk-card-default;row: false">
                             <li>
-                                <div class="uk-card uk-card-default uk-height-small uk-card-body uk-card-small " id="market-uk-card-1" style="display: flex; align-items: center;border-radius: 1.3rem;">Expansion outside country</div>
+                                <div class="uk-card uk-card-default uk-height-small uk-card-body uk-card-small market-uk-card-1" id="market-uk-card-data-1" style="display: flex; align-items: center;border-radius: 1.3rem;">Expansion outside country</div>
                             </li>
                             <li>
-                                <div class="uk-card uk-card-default uk-height-small uk-card-body uk-card-small " id="market-uk-card-2" style="display: flex; align-items: center;border-radius: 1.3rem;">Expansion within Country</div>
+                                <div class="uk-card uk-card-default uk-height-small uk-card-body uk-card-small market-uk-card-2" id="market-uk-card-data-2" style="display: flex; align-items: center;border-radius: 1.3rem;">Expansion within Country</div>
                             </li>
                             <li>
-                                <div class="uk-card uk-card-default uk-height-small uk-card-body uk-card-small " id="market-uk-card-3" style="display: flex; align-items: center;border-radius: 1.3rem;">Add more products or categories</div>
+                                <div class="uk-card uk-card-default uk-height-small uk-card-body uk-card-small market-uk-card-3" id="market-uk-card-data-3" style="display: flex; align-items: center;border-radius: 1.3rem;">Add more products or categories</div>
                             </li>
                             <li>
-                                <div class="uk-card uk-card-default uk-height-small uk-card-body uk-card-small " id="market-uk-card-4" style="display: flex; align-items: center;border-radius: 1.3rem;">Improving my marketing and branding</div>
+                                <div class="uk-card uk-card-default uk-height-small uk-card-body uk-card-small market-uk-card-4" id="market-uk-card-data-4" style="display: flex; align-items: center;border-radius: 1.3rem;">Improving my marketing and branding</div>
                             </li>
                           </ul>
                           </div>
@@ -366,16 +366,16 @@
                           
                           <ul class="uk-grid-small uk-child-width-1-2 uk-child-width-1-4@s uk-text-center" id="digital-uk-card" uk-sortable="handle: .uk-card;" uk-grid uk-height-match="target: > div > .uk-card-small;row: false">
                             <li>
-                                <div class="uk-card uk-card-default uk-height-small uk-card-body uk-card-small " id="digital-uk-card-1" style="display: flex; align-items: center;border-radius: 1.3rem;">Start selling online myself</div>
+                                <div class="uk-card uk-card-default uk-height-small uk-card-body uk-card-small  digital-uk-card-1" id="digital-uk-card-data-1" style="display: flex; align-items: center;border-radius: 1.3rem;">Start selling online myself</div>
                             </li>
                             <li>
-                                <div class="uk-card uk-card-default uk-height-small uk-card-body uk-card-small " id="digital-uk-card-2" style="display: flex; align-items: center;border-radius: 1.3rem;">Start Selling on ecommerce portals like flipkart, amazon.</div>
+                                <div class="uk-card uk-card-default uk-height-small uk-card-body uk-card-small  digital-uk-card-2" id="digital-uk-card-data-2" style="display: flex; align-items: center;border-radius: 1.3rem;">Start Selling on ecommerce portals like flipkart, amazon.</div>
                             </li>
                             <li>
-                                <div class="uk-card uk-card-default uk-height-small uk-card-body uk-card-small " id="digital-uk-card-3" style="display: flex; align-items: center;border-radius: 1.3rem;">Start doing online advertising</div>
+                                <div class="uk-card uk-card-default uk-height-small uk-card-body uk-card-small  digital-uk-card-3" id="digital-uk-card-data-3" style="display: flex; align-items: center;border-radius: 1.3rem;">Start doing online advertising</div>
                             </li>
                             <li>
-                                <div class="uk-card uk-card-default uk-height-small uk-card-body uk-card-small " id="digital-uk-card-4" style="display: flex; align-items: center;border-radius: 1.3rem;">Using social media for marketing
+                                <div class="uk-card uk-card-default uk-height-small uk-card-body uk-card-small digital-uk-card-4 " id="digital-uk-card-data-4" style="display: flex; align-items: center;border-radius: 1.3rem;">Using social media for marketing
                                 </div>
                             </li>
                           </ul>
@@ -1304,7 +1304,7 @@
         }
 
         function setupCompanyEstablishmentSlider($param) {
-          $param.slider({
+           $param.slider({
 
           });
         }
@@ -1331,9 +1331,39 @@
 
         setupSliderRuler($('.slider-tick.round').slice(0,23));
 
+
+
+        // Call a method on the slider
+        //var value = $('.ex6-00').data('slider').getValue();
+
+        $('.ex6-00').on('change', function(obj) {
+            var value = obj.value.newValue;
+            console.log(value);
+
+        });
+
+        $('.ex6-0').on('change', function(obj) {
+            var value = obj.value.newValue;
+            console.log(value);
+
+        });
+
+        $('.ex6-1').on('change', function(obj) {
+            var value = obj.value.newValue;
+            console.log(value);
+
+        });
       
+
+
+
         
         $(".ex6-2").slider();
+        $(".ex6-2").on("slide", function(slideEvt) {
+           console.log(slideEvt.value);
+        });
+
+
         $(".ex6-3").slider();
         $(".ex6-4").slider();
         $(".ex6-5").slider();
@@ -1406,39 +1436,106 @@
           $(this).css('color', '#fff');
         });
 
-        $("#market-uk-card-1").css('background', '#25965b');
-        $("#market-uk-card-2").css('background', '#39B701');
-        $("#market-uk-card-3").css('background', '#EDA024');
-        $("#market-uk-card-4").css('background', '#E56435');
-
-        $("#digital-uk-card-1").css('background', '#25965b');
-        $("#digital-uk-card-2").css('background', '#39B701');
-        $("#digital-uk-card-3").css('background', '#EDA024');
-        $("#digital-uk-card-4").css('background', '#E56435');
 
 
-        var indexes = new Array();
 
-        var sortable = $('#market-uk-card');
-        sortable.on('moved.uk.sortable', function (e, el, type) {
-                console.log(e);
-            });
+        $(".market-uk-card-1").css('background', '#25965b');
+        $(".market-uk-card-2").css('background', '#39B701');
+        $(".market-uk-card-3").css('background', '#EDA024');
+        $(".market-uk-card-4").css('background', '#E56435');
 
-        // $(document).on('moved', '.uk-sortable', function(e) {
-        //   var currentLi = e.originalEvent.explicitOriginalTarget;
-        //   // indexes = [];
-        //   // $(this).find('li').each(function() {
-        //   //   indexes.push($(this).data("index"));
-        //   // });
-        //   // alert("New position: " + $(currentLi).index());
-        //   console.log(currentLi);
-        // });
+        $(".digital-uk-card-1").css('background', '#25965b');
+        $(".digital-uk-card-2").css('background', '#39B701');
+        $(".digital-uk-card-3").css('background', '#EDA024');
+        $(".digital-uk-card-4").css('background', '#E56435');
 
-        // $('.uk-sortable').find('li').each(function(i) {
-        //   $(this).data("index", i);
-        //   indexes.push(i);
-        // });
-        // console.log(indexes);
+
+
+        $("#market-uk-card").on('moved.uk.sortable', function(e, el, type) {
+
+          var childDivs = $('#market-uk-card').find('div');
+          console.log(childDivs);
+
+          var i;
+          for (i = 0; i < childDivs.length; ++i) {
+              
+              if($(childDivs[i]).hasClass('market-uk-card-1')){
+                 $(childDivs[i]).removeClass('market-uk-card-1')
+              }
+              if($(childDivs[i]).hasClass('market-uk-card-2')){
+                 $(childDivs[i]).removeClass('market-uk-card-2')
+              }
+              if($(childDivs[i]).hasClass('market-uk-card-3')){
+                 $(childDivs[i]).removeClass('market-uk-card-3')
+              }
+              if($(childDivs[i]).hasClass('market-uk-card-4')){
+                 $(childDivs[i]).removeClass('market-uk-card-4')
+              }
+
+              switch(i){
+                case 0:
+                  $(childDivs[i]).addClass('market-uk-card-1')  
+                  break;
+                case 1:
+                  $(childDivs[i]).addClass('market-uk-card-2')
+                  break;
+                case 2:
+                  $(childDivs[i]).addClass('market-uk-card-3')
+                  break;
+
+                case 3:
+                  $(childDivs[i]).addClass('market-uk-card-4')
+                  break;
+
+              }
+          }
+
+        });
+
+
+
+        $("#digital-uk-card").on('moved.uk.sortable', function(e, el, type) {
+
+          var childDivs = $('#digital-uk-card').find('div');
+          console.log(childDivs);
+
+          var i;
+          for (i = 0; i < childDivs.length; ++i) {
+              
+              if($(childDivs[i]).hasClass('digital-uk-card-1')){
+                 $(childDivs[i]).removeClass('digital-uk-card-1')
+              }
+              if($(childDivs[i]).hasClass('digital-uk-card-2')){
+                 $(childDivs[i]).removeClass('digital-uk-card-2')
+              }
+              if($(childDivs[i]).hasClass('digital-uk-card-3')){
+                 $(childDivs[i]).removeClass('digital-uk-card-3')
+              }
+              if($(childDivs[i]).hasClass('digital-uk-card-4')){
+                 $(childDivs[i]).removeClass('digital-uk-card-4')
+              }
+
+              switch(i){
+                case 0:
+                  $(childDivs[i]).addClass('digital-uk-card-1')  
+                  break;
+                case 1:
+                  $(childDivs[i]).addClass('digital-uk-card-2')
+                  break;
+                case 2:
+                  $(childDivs[i]).addClass('digital-uk-card-3')
+                  break;
+
+                case 3:
+                  $(childDivs[i]).addClass('digital-uk-card-4')
+                  break;
+
+              }
+          }
+
+        });
+
+
 
 
       })
