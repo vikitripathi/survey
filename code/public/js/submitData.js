@@ -16,3 +16,7 @@ function saveDataFromRadioBtnName(name) {
   var selectedData = $(input).val();
   surveySMEDict[name] = selectedData;
 }
+
+function saveSlider(name, value){
+	surveySMEDict[name] = value;
+}
