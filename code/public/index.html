@@ -970,162 +970,142 @@
                   </div>
 
 
-                    <!-- TAB 4 -->
-                    <div class="tab">
-                      <!-- <h1>Business Services</h1>   -->    
-                      <!-- <p>This survey is to know more about the bottlenecks faced by SME's in financing their daily business run.</p> -->
-
-                      <div>
-                      <div class="form-group">
-
-                          <div class="col-lg-12">
-
-                          <div class="row">
-                          <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">How do you benchmark your competitors?</label>
-                          </div>
-
-                          <div class="row">
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="competitorBenchmark" style="margin-right: 10px;" value="level1"/>Market share
-                              </label>
-                              <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="competitorBenchmark" style="margin-right: 10px;" value="level2"/>Turn over
-                              </label>
-                          </div>
-
-                        </div>
-
-                      </div>
-                    </div>
-
-                      <div>
-                        <div class="form-group">
-                             <div class="col-lg-12">
-
-                              <div class="row">
-                              <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">Do you avail insurance services?</label>
-                              </div>
-
-                              <div class="row">
-                                  <label class="radio-inline col-lg-3">
-                                        <input type="radio" name="insurance" style="margin-right: 10px;" value="yes"/>YES
-                                  </label>
-                                  <label class="radio-inline col-lg-3">
-                                        <input type="radio" name="insurance" style="margin-right: 10px;" value="no"/>NO
-                                  </label>
-                              </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="form-group" id="insuranceChild">
-                              <div class="col-lg-12">
-                                <div class="row">
-                                  <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">If yes, what type of insurance have you availed?</label>
-                                </div>
-                                <div class="row">
-                                  <select class="form-control selectpicker col-lg-6" id="sel1" data-live-search="true" data-style="btn-custom-new">
-                                    <option hidden selected>select an option</option>
-                                    <option>General liability insurance</option>
-                                    <option>Property insurance</option>
-                                    <option>Business owner’s Policy(BOP)</option>
-                                    <option>Professional liability insurance</option>
-                                  </select>
-                                </div>
-                              </div>
-                        </div>
-
-                    </div>
-
-                    <div>
-                      <div class="form-group">
-                          <div class="col-lg-12">
-
-                              <div class="row">
-                              <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">Do you use warehousing service for your inventory storage?</label>
-                              </div>
-
-                              <div class="row">
-                                  <label class="radio-inline col-lg-3">
-                                        <input type="radio" name="warehousing" style="margin-right: 10px;" value="yes"/>YES
-                                  </label>
-                                  <label class="radio-inline col-lg-3">
-                                        <input type="radio" name="warehousing" style="margin-right: 10px;" value="no"/>NO
-                                  </label>
-                              </div>
-
-                            </div>
-
-                      </div>
-
-                      <div class="form-group" id="warehousingChild">
-                          <div class="col-lg-12">
-                              <div class="row">
-                                <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">If yes, then is it</label>
-                              </div>
-
-                              <div class="row">
-                                  <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="editList" style="margin-right: 10px;" value="own"/>Own
-                                  </label>
-                                  <label class="radio-inline col-lg-3">
-                                        <input type="radio" name="editList" style="margin-right: 10px;" value="rented"/>Rented
-                                  </label>
-                                  <label class="radio-inline col-lg-3">
-                                        <input type="radio" name="editList" style="margin-right: 10px;" value="shared"/>Shared
-                                  </label>
-                              </div>
-                          </div>
-
-                      </div>
-
-                    </div>
+                  <!-- TAB 4 -->
+                  <div class="tab">
+                    <!-- <h1>Business Services</h1>   -->    
+                    <!-- <p>This survey is to know more about the bottlenecks faced by SME's in financing their daily business run.</p> -->
 
                     <div>
                       <div class="form-group">
                         <div class="col-lg-12">
-                              <div class="row">
-                                <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">How do you transport your goods/raw materials?</label>
-                              </div>
-
-                              <div class="row">
-                                  <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="editList" style="margin-right: 10px;" value="ownT"/>Own transport
-                                  </label>
-                                  <label class="radio-inline col-lg-3">
-                                        <input type="radio" name="editList" style="margin-right: 10px;" value="outsourced"/>Outsourced
-                                  </label>
-                                  <label class="radio-inline col-lg-3">
-                                        <input type="radio" name="editList" style="margin-right: 10px;" value="notApp"/>Not Applicable
-                                  </label>
-                              </div>
+                          <div class="row">
+                            <label for="competitorsBenchMark" style="font-weight: 400; color: #898992; font-size: 14px;">How do you benchmark your competitors?</label>
                           </div>
+                          <div class="row">
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="competitorsBenchMark" id="competitorsBenchMark" onchange="saveDataFromRadioBtnName('competitorsBenchMark')" style="margin-right: 10px;" value="level1"/>Market share
+                            </label>
+                            <label class="radio-inline col-lg-3">
+                              <input type="radio" name="competitorsBenchMark" id="competitorsBenchMark" onchange="saveDataFromRadioBtnName('competitorsBenchMark')" style="margin-right: 10px;" value="level2"/>Turn over
+                            </label>
+                          </div>
+                        </div>
                       </div>
+                    </div>
 
+                    <div>
                       <div class="form-group">
-                        <div class="col-lg-12">
-                              <div class="row">
-                                <label for="usrSecondName" style="font-weight: 400; color: #898992; font-size: 14px;">How do you manage your payroll/wages?</label>
-                              </div>
-
-                              <div class="row">
-                                  <label class="radio-inline col-lg-3">
-                                    <input type="radio" name="editList" style="margin-right: 10px;" value="manual"/>Manual
-                                  </label>
-                                  <label class="radio-inline col-lg-3">
-                                        <input type="radio" name="editList" style="margin-right: 10px;" value="automated"/>Automated using a platform/bank
-                                  </label>
-                                  <label class="radio-inline col-lg-3">
-                                        <input type="radio" name="editList" style="margin-right: 10px;" value="outSourced"/>Outsourced
-                                  </label>
-                              </div>
-                          </div>
+                       <div class="col-lg-12">
+                        <div class="row">
+                          <label for="insuranceServicesAvailed" style="font-weight: 400; color: #898992; font-size: 14px;">Do you avail insurance services?</label>
+                        </div>
+                        <div class="row">
+                          <label class="radio-inline col-lg-3">
+                            <input type="radio" name="insuranceServicesAvailed" id="insuranceServicesAvailed" onchange="saveDataFromRadioBtnName('insuranceServicesAvailed')" style="margin-right: 10px;" value="yes"/>YES
+                          </label>
+                          <label class="radio-inline col-lg-3">
+                            <input type="radio" name="insuranceServicesAvailed" id="insuranceServicesAvailed" onchange="saveDataFromRadioBtnName('insuranceServicesAvailed')" style="margin-right: 10px;" value="no"/>NO
+                          </label>
+                        </div>
                       </div>
                     </div>
 
+                    <div class="form-group" id="insuranceServicesAvailedChild">
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <label for="insuranceServiceType" style="font-weight: 400; color: #898992; font-size: 14px;">If yes, what type of insurance have you availed?</label>
+                        </div>
+                        <div class="row">
+                          <select class="form-control selectpicker col-lg-6" id="insuranceServiceType" onchange="saveDataFromSelectorId('insuranceServiceType')" data-live-search="true" data-style="btn-custom-new">
+                            <option hidden selected>select an option</option>
+                            <option>General liability insurance</option>
+                            <option>Property insurance</option>
+                            <option>Business owner’s Policy(BOP)</option>
+                            <option>Professional liability insurance</option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+
+                  <div>
+                    <div class="form-group">
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <label for="wareHouseServicesStorageAvailed" style="font-weight: 400; color: #898992; font-size: 14px;">Do you use warehousing service for your inventory storage?</label>
+                        </div>
+                        <div class="row">
+                          <label class="radio-inline col-lg-3">
+                            <input type="radio" name="wareHouseServicesStorageAvailed" id="wareHouseServicesStorageAvailed" onchange="saveDataFromRadioBtnName('wareHouseServicesStorageAvailed')" style="margin-right: 10px;" value="yes"/>YES
+                          </label>
+                          <label class="radio-inline col-lg-3">
+                            <input type="radio" name="wareHouseServicesStorageAvailed" id="wareHouseServicesStorageAvailed" onchange="saveDataFromRadioBtnName('wareHouseServicesStorageAvailed')" style="margin-right: 10px;" value="no"/>NO
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group" id="wareHouseServicesStorageAvailedChild">
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <label for="wareHouseStorageType" style="font-weight: 400; color: #898992; font-size: 14px;">If yes, then is it</label>
+                        </div>
+                        <div class="row">
+                          <label class="radio-inline col-lg-3">
+                            <input type="radio" name="wareHouseStorageType" id="wareHouseStorageType" onchange="saveDataFromRadioBtnName('wareHouseStorageType')" style="margin-right: 10px;" value="own"/>Own
+                          </label>
+                          <label class="radio-inline col-lg-3">
+                            <input type="radio" name="wareHouseStorageType" id="wareHouseStorageType" onchange="saveDataFromRadioBtnName('wareHouseStorageType')" style="margin-right: 10px;" value="rented"/>Rented
+                          </label>
+                          <label class="radio-inline col-lg-3">
+                            <input type="radio" name="wareHouseStorageType" id="wareHouseStorageType" onchange="saveDataFromRadioBtnName('wareHouseStorageType')" style="margin-right: 10px;" value="shared"/>Shared
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="form-group">
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <label for="modeOfTransportaion" style="font-weight: 400; color: #898992; font-size: 14px;">How do you transport your goods/raw materials?</label>
+                        </div>
+                        <div class="row">
+                          <label class="radio-inline col-lg-3">
+                            <input type="radio" name="modeOfTransportaion" id="modeOfTransportaion" onchange="saveDataFromRadioBtnName('modeOfTransportaion')" style="margin-right: 10px;" value="ownT"/>Own transport
+                          </label>
+                          <label class="radio-inline col-lg-3">
+                            <input type="radio" name="modeOfTransportaion" id="modeOfTransportaion" onchange="saveDataFromRadioBtnName('modeOfTransportaion')" style="margin-right: 10px;" value="outsourced"/>Outsourced
+                          </label>
+                          <label class="radio-inline col-lg-3">
+                            <input type="radio" name="modeOfTransportaion" id="modeOfTransportaion" onchange="saveDataFromRadioBtnName('modeOfTransportaion')" style="margin-right: 10px;" value="notApp"/>Not Applicable
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <label for="payrollWagesManage" style="font-weight: 400; color: #898992; font-size: 14px;">How do you manage your payroll/wages?</label>
+                        </div>
+                        <div class="row">
+                          <label class="radio-inline col-lg-3">
+                            <input type="radio" name="payrollWagesManage" id="payrollWagesManage" onchange="saveDataFromRadioBtnName('payrollWagesManage')" style="margin-right: 10px;" value="manual"/>Manual
+                          </label>
+                          <label class="radio-inline col-lg-3">
+                            <input type="radio" name="payrollWagesManage" id="payrollWagesManage" onchange="saveDataFromRadioBtnName('payrollWagesManage')" style="margin-right: 10px;" value="automated"/>Automated using a platform/bank
+                          </label>
+                          <label class="radio-inline col-lg-3">
+                            <input type="radio" name="payrollWagesManage" id="payrollWagesManage" onchange="saveDataFromRadioBtnName('payrollWagesManage')" style="margin-right: 10px;" value="outSourced"/>Outsourced
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
 
 
                     <!--  TAB 5 -->
@@ -1258,12 +1238,12 @@
             $('#supplierOutsideChild').css('display', ($(this).val() === 'yes') ? 'block':'none');
         });
 
-        $("input[name='insurance']").click(function () {
-            $('#insuranceChild').css('display', ($(this).val() === 'yes') ? 'block':'none');
+        $("input[name='insuranceServicesAvailed']").click(function () {
+            $('#insuranceServicesAvailedChild').css('display', ($(this).val() === 'yes') ? 'block':'none');
         });
         
-        $("input[name='warehousing']").click(function () {
-            $('#warehousingChild').css('display', ($(this).val() === 'yes') ? 'block':'none');
+        $("input[name='wareHouseServicesStorageAvailed']").click(function () {
+            $('#wareHouseServicesStorageAvailedChild').css('display', ($(this).val() === 'yes') ? 'block':'none');
         });
 
         $('input:not(:button,:submit),textarea,select').change(function () {
